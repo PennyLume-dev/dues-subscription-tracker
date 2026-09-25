@@ -1,0 +1,16 @@
+# Dues
+
+> Dues is a free, private, open-source subscription tracker for Android by Pennylume. It tracks subscriptions, shows real monthly and yearly spend, and reminds users before renewals and free-trial charges.
+
+- Price: free (no ads, no in-app purchases, no limits)
+- Platform: Android 8.0+ (source and APK on GitHub; Samsung Galaxy Store coming soon)
+- Privacy: no account; data stays on the device; CSV export
+- Catalog: 69 services (Netflix, Spotify, ChatGPT, YouTube Premium, iCloud+, Disney+, Amazon Prime and more) with verified local prices in 12 countries: US, India, UK, Germany, France, Canada, Australia, Singapore, UAE, Brazil, Japan, Mexico
+- Features: renewal and free-trial reminders, payment calendar, spending totals by category, lists, price history, currency conversion
+- License: GPL-3.0 (code); the "Dues" name and Penny mascot are Pennylume trademarks
+
+## Links
+- [Website](https://dues-app.vercel.app/)
+- [Source code and downloads](https://github.com/PennyLume-dev/dues-subscription-tracker)
+- [Support and FAQ](https://dues-app.vercel.app/support)
+- [Privacy policy](https://dues-app.vercel.app/privacy)

@@ -1,8 +1,18 @@
 <p align="center"><img src="art/penny_wave.png" width="140" alt="Penny, the Dues mascot"></p>
 
-<h1 align="center">Dues</h1>
+<h1 align="center">Dues – Free Subscription Tracker for Android</h1>
 <p align="center"><b>Know what you really pay for subscriptions.</b><br>
-A free, private Android subscription tracker by <b>Pennylume</b>.</p>
+A free, private, open-source subscription manager and renewal reminder app by <b>Pennylume</b>.</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="License: GPL-3.0" src="https://img.shields.io/badge/license-GPL--3.0-blue"></a>
+  <img alt="Platform: Android" src="https://img.shields.io/badge/platform-Android%208%2B-3DDC84?logo=android&logoColor=white">
+  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-Jetpack%20Compose-7F52FF?logo=kotlin&logoColor=white">
+  <a href="../../releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/PennyLume-dev/dues-subscription-tracker/total?color=gold"></a>
+  <a href="https://dues-app.vercel.app"><img alt="Website" src="https://img.shields.io/badge/web-dues--app.vercel.app-orange"></a>
+</p>
+
+Dues helps you **track subscriptions, cut subscription costs and never miss a renewal**. Add Netflix, Spotify, ChatGPT, YouTube Premium, iCloud+, Disney+, Amazon Prime and more, and Dues shows your real monthly and yearly spend with **verified local prices**, then reminds you before every charge or free-trial end. No account, no ads, no in-app purchases.
 
 ---
 
@@ -32,6 +42,17 @@ Optional `local.properties` entries:
 - `RELEASE_STORE_FILE`, `RELEASE_STORE_PASSWORD`, `RELEASE_KEY_ALIAS`, `RELEASE_KEY_PASSWORD` for signed release builds.
 
 Prices live in `app/src/main/assets/catalog.json`; the app also fetches the newest copy from the website. Price corrections are welcome as issues or pull requests.
+
+## FAQ
+**Is Dues free?** Yes. Completely free: no ads, no in-app purchases, no subscription limit.
+
+**Does Dues upload my data?** No. There is no account; your subscriptions stay on your phone. Export to CSV for backups.
+
+**Which countries have verified prices?** United States, India, United Kingdom, Germany, France, Canada, Australia, Singapore, UAE, Brazil, Japan and Mexico. Elsewhere, prices are converted from USD at live rates.
+
+**Can Dues cancel a subscription for me?** No. It reminds you before you're charged; you cancel with the provider and mark it cancelled in Dues.
+
+**Is there an iPhone version?** Not yet. Dues is Android only for now.
 
 ## Tech
 Kotlin · Jetpack Compose · Material 3 · Room · WorkManager · Coil.

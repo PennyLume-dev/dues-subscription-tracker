@@ -3,17 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dues – Subscription Tracker</title>
-<meta name="description" content="Track every subscription, see what you really spend and get reminded before renewals. Private by design: your data stays on your phone.">
-<meta property="og:title" content="Dues – Subscription Tracker">
-<meta property="og:description" content="Know what you owe, before it renews.">
-<meta property="og:image" content="assets/og.png">
+<title>Dues – Free Subscription Tracker &amp; Renewal Reminder for Android</title>
+<meta name="description" content="Dues is a free, private, open-source subscription tracker for Android. Track Netflix, Spotify, ChatGPT and 69 services, see monthly and yearly spend with verified prices in 12 countries, and get reminded before renewals and free trials end. No account, no ads.">
+<link rel="canonical" href="https://dues-app.vercel.app/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dues-app.vercel.app/">
+<meta property="og:site_name" content="Dues by Pennylume">
+<meta property="og:title" content="Dues – Free Subscription Tracker for Android">
+<meta property="og:description" content="See what you really pay for subscriptions and get reminded before every renewal. Free, private, open source.">
+<meta property="og:image" content="https://dues-app.vercel.app/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dues – Free Subscription Tracker for Android">
+<meta name="twitter:description" content="Track every subscription, see your real yearly spend, get renewal reminders. Free, private, open source.">
+<meta name="twitter:image" content="https://dues-app.vercel.app/assets/og.png">
 <meta name="theme-color" content="#0e0b08">
 <link rel="icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Dues", "alternateName": "Dues – Subscription Tracker", "description": "Free, private, open-source Android subscription tracker with renewal and free-trial reminders and verified prices in 12 countries.", "applicationCategory": "FinanceApplication", "operatingSystem": "Android 8.0+", "url": "https://dues-app.vercel.app", "downloadUrl": "https://github.com/PennyLume-dev/dues-subscription-tracker/releases/latest", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "isAccessibleForFree": true, "license": "https://www.gnu.org/licenses/gpl-3.0.html", "codeRepository": "https://github.com/PennyLume-dev/dues-subscription-tracker", "author": {"@type": "Organization", "name": "Pennylume"}, "image": "https://dues-app.vercel.app/assets/icon.png", "featureList": ["Track unlimited subscriptions", "Renewal and free-trial reminders", "Verified prices in 12 countries", "Monthly and yearly spending totals", "Calendar of upcoming payments", "No account, no ads, data stays on device", "CSV export"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Pennylume", "url": "https://dues-app.vercel.app", "logo": "https://dues-app.vercel.app/assets/icon.png", "email": "pennylume@proton.me", "sameAs": ["https://github.com/PennyLume-dev"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Dues?", "acceptedAnswer": {"@type": "Answer", "text": "Dues is a free Android app that tracks all your subscriptions (Netflix, Spotify, ChatGPT, iCloud+ and 65 more), shows what you really spend each month and year, and reminds you before every renewal or free-trial charge."}}, {"@type": "Question", "name": "Is Dues free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Dues is completely free, with no ads, no in-app purchases and no limit on how many subscriptions you track."}}, {"@type": "Question", "name": "Does Dues need an account or see my data?", "acceptedAnswer": {"@type": "Answer", "text": "No. Dues works without an account. Your subscriptions stay on your phone and are never uploaded; you can export them to CSV for backups."}}, {"@type": "Question", "name": "Which countries have verified subscription prices?", "acceptedAnswer": {"@type": "Answer", "text": "Dues has verified local prices for the United States, India, the United Kingdom, Germany, France, Canada, Australia, Singapore, the UAE, Brazil, Japan and Mexico. Other countries see prices converted from US dollars at live exchange rates."}}, {"@type": "Question", "name": "Can Dues cancel subscriptions for me?", "acceptedAnswer": {"@type": "Answer", "text": "No. Dues reminds you before you are charged, but you cancel with the provider (or your app store), then mark it as cancelled in Dues."}}, {"@type": "Question", "name": "Is Dues open source?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Android app is open source under the GPL-3.0 license on GitHub."}}]}</script>
 </head>
 <body>
 <header class="wrap">
@@ -71,10 +83,22 @@
     </div>
   </section>
 
+  <section id="faq" class="doc">
+    <div class="eyebrow">FAQ</div>
+    <h2>Questions about Dues</h2>
+    <details><summary>What is Dues?</summary><p>Dues is a free Android app that tracks all your subscriptions (Netflix, Spotify, ChatGPT, iCloud+ and 65 more), shows what you really spend each month and year, and reminds you before every renewal or free-trial charge.</p></details>
+    <details><summary>Is Dues free?</summary><p>Yes. Dues is completely free, with no ads, no in-app purchases and no limit on how many subscriptions you track.</p></details>
+    <details><summary>Does Dues need an account or see my data?</summary><p>No. Dues works without an account. Your subscriptions stay on your phone and are never uploaded; you can export them to CSV for backups.</p></details>
+    <details><summary>Which countries have verified subscription prices?</summary><p>Dues has verified local prices for the United States, India, the United Kingdom, Germany, France, Canada, Australia, Singapore, the UAE, Brazil, Japan and Mexico. Other countries see prices converted from US dollars at live exchange rates.</p></details>
+    <details><summary>Can Dues cancel subscriptions for me?</summary><p>No. Dues reminds you before you are charged, but you cancel with the provider (or your app store), then mark it as cancelled in Dues.</p></details>
+    <details><summary>Is Dues open source?</summary><p>Yes. The Android app is open source under the GPL-3.0 license on <a href="https://github.com/PennyLume-dev/dues-subscription-tracker">GitHub</a>.</p></details>
+  </section>
+
   <div class="cta-band" id="get">
     <img src="assets/penny_celebrate.webp" alt="">
-    <h2 style="font-size:clamp(28px,4vw,40px);margin:10px 0 12px">Coming soon to the Galaxy Store</h2>
-    <p style="color:var(--lo);margin:0 0 24px">Dues is launching on Android. Check back soon for the download link.</p>
+    <h2 style="font-size:clamp(28px,4vw,40px);margin:10px 0 12px">Get Dues for Android</h2>
+    <p style="color:var(--lo);margin:0 0 24px">Free and open source. Get it on GitHub; Galaxy Store listing coming soon.</p>
+    <a class="btn" href="https://github.com/PennyLume-dev/dues-subscription-tracker">Get Dues on GitHub</a>
     <a class="btn ghost" href="support">Questions? Contact support</a>
   </div>
 </main>
