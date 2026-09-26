@@ -11,7 +11,7 @@ Dues is a free Android subscription tracker (Kotlin + Jetpack Compose) by **Penn
 
 ## Product decisions
 - Dues is **fully free**: no ads, no in-app purchases, no subscription limit. What is free stays free.
-- Distribution: Samsung Galaxy Store (Private seller, free apps only), GitHub Releases, dues-app.vercel.app.
+- Distribution: GitHub (PennyLume-dev org, Releases) + dues-app.vercel.app. Galaxy Store dropped (2026-09-26). Google Play once donations cover the $25 fee.
 
 ## Build
 - Low-RAM PC: `./gradlew assemblePreview testDebugUnitTest --max-workers=1`.

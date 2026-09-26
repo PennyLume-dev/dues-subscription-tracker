@@ -42,6 +42,8 @@ import androidx.compose.ui.graphics.Brush
 import com.dues.app.BuildConfig
 import com.dues.app.Legal
 import androidx.compose.material.icons.outlined.Person
+import androidx.compose.material.icons.outlined.Code
+import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material.icons.outlined.Shield
 import androidx.compose.material.icons.outlined.Description
 import java.util.Locale
@@ -165,17 +167,15 @@ fun SettingsTab(vm: AppVM, nav: NavController) {
         item { SectionHeader("Spread the word") }
         item {
             Panel {
-                PanelRow("Leave a review", icon = Icons.Outlined.Star, onClick = {
-                    val market = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=${ctx.packageName}"))
-                    runCatching { ctx.startActivity(market) }.onFailure {
-                        runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=${ctx.packageName}"))) }
-                    }
-                })
+                PanelRow("Support Dues", sub = "Dues is free. Tips keep it that way.", icon = Icons.Outlined.FavoriteBorder, iconTint = Coral,
+                    onClick = { openUrl(ctx, Legal.DONATE_URL) })
+                PanelDivider()
+                PanelRow("Star on GitHub", icon = Icons.Outlined.Star, onClick = { openUrl(ctx, Legal.REPO_URL) })
                 PanelDivider()
                 PanelRow("Share with a friend", icon = Icons.Outlined.Share, iconTint = Coral, onClick = {
                     val send = Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(
                         Intent.EXTRA_TEXT,
-                        "I keep track of my subscriptions with Dues: https://play.google.com/store/apps/details?id=${ctx.packageName}",
+                        "I keep track of my subscriptions with Dues, a free and private app: https://dues-app.vercel.app",
                     )
                     ctx.startActivity(Intent.createChooser(send, "Share Dues"))
                 })
@@ -188,6 +188,8 @@ fun SettingsTab(vm: AppVM, nav: NavController) {
                 PanelDivider()
                 PanelRow("Terms of use", icon = Icons.Outlined.Description, iconTint = TextLo, onClick = { nav.navigate("legal/terms") })
                 PanelDivider()
+                PanelRow("Source code", "GitHub", Icons.Outlined.Code, iconTint = TextLo, onClick = { openUrl(ctx, Legal.REPO_URL) })
+                PanelDivider()
                 PanelRow("Contact support", Legal.SUPPORT_EMAIL, Icons.Outlined.Mail, iconTint = Coral, onClick = {
                     runCatching {
                         ctx.startActivity(Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:${Legal.SUPPORT_EMAIL}")).putExtra(Intent.EXTRA_SUBJECT, "Dues support"))
@@ -197,7 +199,7 @@ fun SettingsTab(vm: AppVM, nav: NavController) {
         }
         item {
             Text(
-                "Dues 1.0 by Pennylume  ·  Logos by Logo.dev", color = TextLo, fontSize = 13.sp, textAlign = TextAlign.Center,
+                "Dues ${BuildConfig.VERSION_NAME} by Pennylume  ·  Logos by Logo.dev", color = TextLo, fontSize = 13.sp, textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth().padding(top = 8.dp).clickable {
                     runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://logo.dev"))) }
                 },

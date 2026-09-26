@@ -14,3 +14,4 @@
 - [Source code and downloads](https://github.com/PennyLume-dev/dues-subscription-tracker)
 - [Support and FAQ](https://dues-app.vercel.app/support)
 - [Privacy policy](https://dues-app.vercel.app/privacy)
+- [Support / donate](https://dues-app.vercel.app/donate)

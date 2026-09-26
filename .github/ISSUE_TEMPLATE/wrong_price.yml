@@ -1,0 +1,21 @@
+name: Wrong or missing price
+description: A plan price in Dues doesn't match what the service charges in your country
+title: "[Price] <Service> – <Country>"
+labels: ["price"]
+body:
+  - type: input
+    id: service
+    attributes: {label: Service and plan, placeholder: "Netflix – Standard"}
+    validations: {required: true}
+  - type: input
+    id: country
+    attributes: {label: Country, placeholder: "India"}
+    validations: {required: true}
+  - type: input
+    id: price
+    attributes: {label: Correct price and billing cycle, placeholder: "₹499 per month"}
+    validations: {required: true}
+  - type: input
+    id: source
+    attributes: {label: Official source link, description: "The service's own pricing page or app store listing"}
+    validations: {required: true}

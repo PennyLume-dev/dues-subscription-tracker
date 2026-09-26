@@ -93,6 +93,9 @@ object Legal {
     const val TERMS_URL = "https://dues-app.vercel.app/terms"
     const val SUPPORT_URL = "https://dues-app.vercel.app/support"
     const val SUPPORT_EMAIL = "pennylume@proton.me"
+    /** Donation options live on the website so they can change without an app update. */
+    const val DONATE_URL = "https://dues-app.vercel.app/donate"
+    const val REPO_URL = "https://github.com/PennyLume-dev/dues-subscription-tracker"
 }
 
 fun round2(v: Double) = Math.round(v * 100) / 100.0

@@ -1,0 +1,14 @@
+name: Bug report
+description: Something in Dues doesn't work as expected
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes: {label: What happened, description: "What you did, what you expected and what happened instead"}
+    validations: {required: true}
+  - type: input
+    id: device
+    attributes: {label: Phone and Android version, placeholder: "Pixel 7, Android 15"}
+  - type: input
+    id: version
+    attributes: {label: Dues version, description: "Settings → bottom of the screen"}

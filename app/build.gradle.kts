@@ -15,8 +15,8 @@ android {
         applicationId = "com.dues.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
 
         // Publishable logo.dev key (client-safe) from local.properties; empty = fall back to Google favicons.
         val props = Properties().apply {
