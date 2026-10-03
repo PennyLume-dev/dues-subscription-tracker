@@ -34,3 +34,4 @@ PLAY_CONSOLE_GUIDE.md
 __pycache__/
 *.pyc
 art/master_url.txt
+PLAN.md
