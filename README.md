@@ -25,7 +25,7 @@ Free · Private · Open source · by <a href="https://github.com/PennyLume-dev">
 
 Small subscriptions add up quietly. **Dues** is a free subscription manager and renewal reminder for Android: add Netflix, Spotify, ChatGPT, YouTube Premium, iCloud+, Disney+, Amazon Prime and 60+ more services, and it shows your **real monthly and yearly spend** with **verified local prices**, then reminds you **before every charge or free-trial end**.
 
-No account. No ads. No in-app purchases. Your data never leaves your phone.
+No account. No ads. No in-app purchases. We never receive your data. It stays on your phone, apart from optional Android backup to your own Google account.
 
 ## Screenshots
 
