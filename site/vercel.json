@@ -1,4 +1,8 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/privacy", "destination": "https://pennylume.vercel.app/dues/privacy", "permanent": true },
+    { "source": "/terms", "destination": "https://pennylume.vercel.app/dues/terms", "permanent": true }
+  ]
 }
